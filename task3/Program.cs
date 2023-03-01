@@ -10,6 +10,10 @@ int dayofweek = int.Parse(Console.ReadLine());
 if (dayofweek <= 5){
     Console.WriteLine("no");
 }
-else {
+else if (dayofweek == 6 || dayofweek == 7)
+{
     Console.WriteLine("yes");
+}
+else {
+    Console.WriteLine("This day not a weekday");
 }
